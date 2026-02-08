@@ -412,12 +412,28 @@ section {
     .cyber-table { min-width: 550px; }
 
     .cyber-table-container::-webkit-scrollbar,
-    .profile-box::-webkit-scrollbar { height: 4px; }
-
-    .cyber-table-container::-webkit-scrollbar-thumb,
-    .profile-box::-webkit-scrollbar-thumb {
-        background: rgba(189, 0, 255, 0.6);
+    .profile-box::-webkit-scrollbar,
+    .code-box::-webkit-scrollbar,
+    .scroll-container::-webkit-scrollbar {
+        height: 6px !important;
+        display: block !important;
+    }
+    
+    .cyber-table-container::-webkit-scrollbar-track,
+    .profile-box::-webkit-scrollbar-track,
+    .code-box::-webkit-scrollbar-track,
+    .scroll-container::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
         border-radius: 10px;
+    }
+    
+    .cyber-table-container::-webkit-scrollbar-thumb,
+    .profile-box::-webkit-scrollbar-thumb,
+    .code-box::-webkit-scrollbar-thumb,
+    .scroll-container::-webkit-scrollbar-thumb {
+        background: #bd00ff !important;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(189, 0, 255, 0.8);
     }
 
     .hero h1 { font-size: 28px; }
